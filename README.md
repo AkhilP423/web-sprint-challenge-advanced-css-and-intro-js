@@ -22,11 +22,21 @@ Commit your code regularly and meaningfully.
 
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
-1. How would you describe acessibility on the web to someone new to programming?
+1. How would you describe accessibility on the web to someone new to programming?
+    People access the web with several different types of devices, and in the modern era, more are using mobile devices than ever. This means that certain websites must be as accessible for users on mobile as they are would be on a desktop. For example, there shouldn't be a horizontal scrollbar, and it would make more sense to stack items vertically for mobile use. Basically, we want to style our webpages in a way where everyone can peruse the information properly.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    One thing we can do is to make a more responsive design on our website. For instance, we can remove a horizontal scroll bar on mobile by stacking items vertically when the width of the device is small (a phone). Styling our website comes in many ways, and something as simple as changing the padding can go a long way for many devices. Another way we can make our website accessible is through the use of a proper alt tag for every image. What this does is displays text should the image not load for some reason, and, for blind/colorblind people using text to speech or reading, it can describe the image they can't properly see. A third way we can make our website accessible is using proper headings to organize all the contents. The user should be able to clearly see each section of the website, and have access to a navigation bar that quickly accesses their desired major sections.
 3. How would you explain the concept of a variable to someone new to programming?
+    If you remember back to your algebra class, a variable was often a letter used in place of a number. In programming, it is the same concept, but the variable often comes in the form of words and numbers, and sometimes a $ and _. Additionally, it can store more than just numbers. It can also be a string, which is a piece of text. For instance, you can have a variable called "name" that stores the value of "John". Additionally, it can store the value of true/false, which would make it a boolean variable. It can also store an array or an object, which are more advanced sets of data. However, as a beginner, all you need to know is that a variable stores data that can be later used for different operations and algorithms.
 4. What is the purpose of using functions in code?
+    A function allows you to define some code, name it like  a variable, and call it back as many times as you want. They combine many instructions into a single line of code. This saves valuable time and reduces the overhead needed by your computer when dealing with gargantuan amounts of code. For example, let's say we wanted to make a simple function that converts a fahrenheit value to celsius. We can use:
+    function Celsius(fahrenheit) {
+         return (5/9) * (fahrenheit-32);
+    }
+    This creates a placeholder, and any value we need converted, we can simply run Celcius(desiredvalue)(), rather than manually doing the math. This is a huge deal when dealing with bigger formulas. Aside from mathematical uses, repetition is just useful to make our lives easier.
 5. How do you access a key inside of an object inside of an array?
+    Let's assume the array name is array and the key name is key. We can simply access the key by finding the index number of the object and referencing the key.
+    For instance, array[4].name would reference the 5th object in the array, and it's key of name.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
