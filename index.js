@@ -246,7 +246,7 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array) {
+/*function get20s(array) {
   let lastCentury = [];
   
   for(let i=0; i<array.length; i++){
@@ -254,7 +254,7 @@ function get20s(array) {
     lastCentury.push(array[i].name);
   }
   return lastCentury;
-}
+}*/
 
 
 
@@ -272,32 +272,45 @@ For example, if removeArtist is invoked with the artists array and the number 0,
 
 function removeArtist(array, number) {
   array.splice(number,1);
-  console.log(array.length);
+  return array.length;
 }
-
-removeArtist(artists,9);
+console.log(removeArtist(artists,9));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
 1. Receive an array
 2. Add this object of information to the end of the array
-  { 
-    id: 20,
-    name: Your Name Here, 
-    years: Your Birth Year - current day,
-    genre: Web Design, 
-    nationality: Your Nationality Here
-    bio: Add 1-2 sentences (or use lorem ipsum)
-  }  
+    {
+      "id": 20,
+      "name": "Akhil Pinnani", 
+      "years": "1996-2021",
+      "genre": "Web Design", 
+      "nationality": "Indian",
+      "bio": "Hi my name is Akhil"
+    } 
 3. Return the resulting array
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+
+
+function addArtist(array) {
+  array.push(
+    {
+      "id": 20,
+      "name": "Akhil Pinnani", 
+      "years": "1996-2021",
+      "genre": "Web Design", 
+      "nationality": "Indian",
+      "bio": "Hi my name is Akhil"
+    }
+  );
+
+  return array;
 }
 
+console.log(addArtist(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -307,9 +320,17 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(array) {
+  let hundredPlus = [];
+  
+  for(let i=0; i<array.length; i++){
+    if(array[i].paintings > 100){
+     hundredPlus.push(array[i].name);
+    }
+  }
+  return hundredPlus;
 }
+console.log(lotsOfArt(artists));
 
 
 /* ***** END OF TASKS ***** */
