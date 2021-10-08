@@ -231,8 +231,6 @@ Example, if getArtistByIndex is invoked with the artists array and the number 0,
 function getArtistByIndex(array, number) {
   return 'the artist at index '+ number + ' is ' +array[number].name;
 }
-console.log(getArtistByIndex(artists, 6));
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -256,7 +254,7 @@ function get20s(array) {
   }
   return artistsIn1900s;
 }
-console.log(get20s(artists));
+
 
 
 
@@ -273,7 +271,7 @@ function removeArtist(array, number) {
   array.splice(number,1);
   return array.length;
 }
-console.log(removeArtist(artists,9));
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -306,7 +304,6 @@ function addArtist(array) {
   return array;
 }
 
-console.log(addArtist(artists));
 
 
 
@@ -326,7 +323,6 @@ function lotsOfArt(array) {
   }
   return hundredPlus;
 }
-console.log(lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
