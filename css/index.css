@@ -136,20 +136,26 @@ button:hover{
 }
 
 @media(max-width:500px){
-    nav{
-        font-size:60%;
+    nav a{
+        font-size:smaller;
     }
     .artists-container{
         display:flex;
         flex-direction:column;
+        justify-content: center;
         align-items:center;
         width:100%;
     }
+    .artists-container a{
+        font-size-adjust:.25;
+    }
+
         .artist{
-            width:40%;
+            width:42%;
             text-align:center;
-            font-size:40%;
+            font-size:37%;
         }
+
         .artist img{
             width:80%;
             height:20vh;
