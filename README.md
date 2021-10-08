@@ -33,7 +33,7 @@ Please answer the following questions below, you may edit the readme file to inc
     function Celsius(fahrenheit) {
          return (5/9) * (fahrenheit-32);
     }
-    This creates a placeholder, and any value we need converted, we can simply run Celcius(desiredvalue)(), rather than manually doing the math. This is a huge deal when dealing with bigger formulas. Aside from mathematical uses, repetition is just useful to make our lives easier.
+    This creates a placeholder, and any value we need converted, we can simply run Celcius(desiredvalue)();, rather than manually doing the math. This is a huge deal when dealing with bigger formulas. Aside from mathematical uses, repetition is just useful to make our lives easier.
 5. How do you access a key inside of an object inside of an array?
     Let's assume the array name is array and the key name is key. We can simply access the key by finding the index number of the object and referencing the key.
     For instance, array[4].name would reference the 5th object in the array, and it's key of name.
