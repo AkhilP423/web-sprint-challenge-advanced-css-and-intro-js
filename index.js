@@ -226,14 +226,12 @@ Use getArtistByIndex to do the following:
 1. Receive an array
 2. Receive a number, which is the desired index in the array.
 3. Return a string in the format `the artist at index {id} is {name}`
-
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(array, number) {
-    return 'the artist at index '+ number + ' is ' +array[number].name;
-  }
+  return 'the artist at index '+ number + ' is ' +array[number].name;
+}
 console.log(getArtistByIndex(artists, 6));
-
 
 
 
@@ -241,23 +239,13 @@ console.log(getArtistByIndex(artists, 6));
 Use get20s to do the following: 
 1. Receive an array
 2. Return a new array with names of artists who were born in and died in 20th century (1900-2000) 
-
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-/*function get20s(array) {
-  let lastCentury = [];
-  
-  for(let i=0; i<array.length; i++){
-    if(array[i].years)
-    lastCentury.push(array[i].name);
-  }
-  return lastCentury;
-}*/
-
-
-
+function get20s(/*Your Code Here*/) {
+  /*Your Code Here*/
+}
 
 
 
@@ -267,7 +255,6 @@ Use removeArtist to do the following:
 2. Receive a number which is the desired index in the array
 3. The function should remove an artist from the array at the index
 4. Return the length of the remaining dataset.
-
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, number) {
@@ -281,19 +268,16 @@ console.log(removeArtist(artists,9));
 Use addArtist to do the following: 
 1. Receive an array
 2. Add this object of information to the end of the array
-    {
-      "id": 20,
-      "name": "Akhil Pinnani", 
-      "years": "1996-2021",
-      "genre": "Web Design", 
-      "nationality": "Indian",
-      "bio": "Hi my name is Akhil"
-    } 
+  { 
+    id: 20,
+    name: Your Name Here, 
+    years: Your Birth Year - current day,
+    genre: Web Design, 
+    nationality: Your Nationality Here
+    bio: Add 1-2 sentences (or use lorem ipsum)
+  }  
 3. Return the resulting array
-
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
-
-
 
 function addArtist(array) {
   array.push(
@@ -313,11 +297,11 @@ function addArtist(array) {
 console.log(addArtist(artists));
 
 
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
 1. Receive an array 
 2. Return an array with names of artists in the received array who painted more than 100 paintings.
-
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
@@ -331,7 +315,6 @@ function lotsOfArt(array) {
   return hundredPlus;
 }
 console.log(lotsOfArt(artists));
-
 
 /* ***** END OF TASKS ***** */
 
