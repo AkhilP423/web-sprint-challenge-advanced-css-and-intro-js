@@ -243,6 +243,8 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
   var yearList = "";
+  var year1;
+  var year2;
   const artistsIn1900s= [];
   for(let i=0; i<array.length;i++){
     yearList=array[i].years;
@@ -255,7 +257,7 @@ function get20s(array) {
   return artistsIn1900s;
 }
 
-
+console.log(get20s(artists));
 
 
 
